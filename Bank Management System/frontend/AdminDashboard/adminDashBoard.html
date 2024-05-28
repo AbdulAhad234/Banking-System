@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/DB_Web_Project/frontend/AdminDashboard/adminDashBoard.css">
+</head>
+
+<body>
+
+    <div class="d-flex">
+        <div class="sidebar flex-shrink-0 p-3 bg-light">
+            <a href="/Home/homepage.html"
+                class="d-flex align-items-center pb-3 mb-3 link-body-emphasis text-decoration-none border-bottom">
+                <img src="/Icons/bank-line.png" alt="Logo" width="30" height="24"
+                    class="d-inline-block align-text-top" />
+                Unity Financials
+            </a>
+            <ul class="list-unstyled ps-0">
+                <li class="mb-1">
+                    <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0"
+                        onclick="showTabContent('customers')">
+                        Customers
+                    </button>
+                </li>
+                <li class="mb-1">
+                    <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0"
+                        onclick="showTabContent('staff')">
+                        Staff Members
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <div id="customers" class="tab-content">
+                <h1>Customers</h1>
+            </div>
+            <div id="staff" class="tab-content">
+                <h1>Staff Management</h1>
+                <div class="row">
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">New Staff Members</h5>
+                                <p class="card-text">Add new staff members to the system.</p>
+                                <a href="#" class="btn btn-primary" onclick="showStaffSection('addStaff')">Add Staff</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">View Staff Members</h5>
+                                <p class="card-text">View all staff members in the system.</p>
+                                <a href="#" class="btn btn-primary" onclick="showStaffSection('viewStaff')">View Staff</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Delete Staff Members</h5>
+                                <p class="card-text">Remove staff members from the system.</p>
+                                <a href="#" class="btn btn-primary" onclick="showStaffSection('deleteStaff')">Delete Staff</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Section for Add Staff -->
+                <div id="addStaff" class="staff-section">
+                    <h2>Add Staff</h2>
+                    <form id="addStaffForm">
+                        <div class="mb-3">
+                            <label for="staffName" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="staffName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="staffEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="staffEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="staffRole" class="form-label">Role</label>
+                            <input type="text" class="form-control" id="staffRole" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Add Staff</button>
+                    </form>
+                </div>
+                <!-- Section for View Staff -->
+                <div id="viewStaff" class="staff-section">
+                    <h2>View Staff</h2>
+                    <table class="table" id="staffTable">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Role</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Staff data will be populated here -->
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Section for Delete Staff -->
+                <div id="deleteStaff" class="staff-section">
+                    <h2>Delete Staff</h2>
+                    <table class="table" id="deleteStaffTable">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Role</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Staff data will be populated here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="/DB_Web_Project/frontend/AdminDashboard/adminDashBoard.js"></script>
+</body>
+
+</html>

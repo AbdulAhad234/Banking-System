@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+  }
+  
+  /* Sidebar */
+  .flex-shrink-0 {
+      width: 220px;
+      height: 100vh;
+      font-size: 20px; 
+      position: fixed; 
+      top: 0;
+      left: 0;
+      overflow-y: auto; 
+      z-index: 1000; 
+      background-color: #008080 !important;
+  }
+  
+  /* Sidebar link */
+  ul li button {
+      color: #000000 !important; 
+  }
+  
+  /* Sidebar active link */
+  ul li button :hover {
+      color: #ffffff ; 
+  }
+  
+  .main-content {
+      margin-left: 220px; 
+      padding: 20px; 
+  }
+
+  #cutomers{
+    display: none;
+  }
+
+  #staff{
+    display: none;
+  }
+
+  #addSatff{
+    display: none;
+  }
+
+  #viewSatff{
+    display: none;
+  }
+
+  #deleteSatff{
+    display: none;
+  }

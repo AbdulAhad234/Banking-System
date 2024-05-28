@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+}
+
+/* Sidebar */
+.flex-shrink-0 {
+    width: 220px;
+    height: 100vh;
+    font-size: 20px; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    overflow-y: auto; 
+    z-index: 1000; 
+    background-color: #008080;
+    color:#ffffff !important;
+}
+
+/* Sidebar link */
+.link-body-emphasis {
+    color: #ffffff !important; 
+}
+
+/* Sidebar active link */
+.link-body-emphasis.active {
+    color: #ffffff !important; 
+}
+
+.content {
+    margin-left: 220px; 
+    padding: 20px; 
+}
+
+
+
+/* Profile section */
+.profile-section {
+    margin-bottom: 30px;
+}
+
+.profile-details p {
+    margin-bottom: 10px;
+}
+
+/* Accounts section */
+.accounts-section {
+    margin-bottom: 30px;
+}
+
+.account-details p {
+    margin-bottom: 5px;
+}
+
+/* Transactions section */
+.transactions-section {
+    margin-bottom: 30px;
+}
+
+.transaction-options ul {
+    list-style-type: none;
+}
+
+.transaction-options ul li {
+    margin-bottom: 5px;
+}
+
+/* Transaction history section */
+.transaction-history-section table {
+    width: 100%;
+}
+
+.transaction-history-section th,
+.transaction-history-section td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6; 
+}
+
+.transaction-history-section th {
+    background-color: #f8f9fa; 
+}
+
+/* Add more styling as needed */

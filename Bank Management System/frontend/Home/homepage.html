@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unity Financials</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/Home/homepage.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="/Icons/bank-line.png" alt="Logo" width="30" height="24"
+          class="d-inline-block align-text-top" />
+        Unity Financials
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/Home/homepage.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/AboutUS/aboutUs.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/Services/services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#signUpModal">Get Started</a>
+          </li>
+        </ul>
+
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-info" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="carousel-container">
+    <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/Images/img_1 (2).jpg" class="d-block w-100" alt="">
+          <div class="carousel-caption d-none d-md-block">
+            <button class="btn btn-light">Welcome at Unity Financials!</button>
+            <p><strong>Experience seamless banking services tailored to your needs
+                at Unity Financials. Our innovative solutions empower you to manage
+                your finances with ease and security
+              </strong></p>
+            <a href="/Services/services.html" class="btn btn-success">Explore Our Services</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/Images/img_3.jpg" class="d-block w-100" alt="">
+          <div class="carousel-caption d-none d-md-block">
+            <button class="btn btn-light">Secure Banking Solutions</button>
+            <p><strong>At Unity Financials, your security is our priority. Our advanced encryption technologies
+                and robust security measures ensure that your transactions
+                are safe and protected at all times
+              </strong></p>
+            <a href="#" class="btn btn-success">Learn More About Security</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/Images/img_4.jpg" class="d-block w-100" alt="">
+          <div class="carousel-caption d-none d-md-block">
+            <button class="btn btn-light">Personalized Customer Service</button>
+            <p><strong>We're dedicated to building strong customer relationships. Our team is here to provide
+                personalized support, helping you achieve your financial goals
+              </strong></p>
+            <a href="#footer" class="btn btn-success">Contact Us for Assistance</a>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="welcome-section">
+    <h1>Welcome to the New Age</h1>
+    <p>Unity Financials Netbanking empowers you to manage all your finances with an enhanced platform that makes banking
+      simple and easy. Whether you’re looking to check your balance, pay bills, transfer funds or print statements; our
+      Netbanking and mobile app has got you covered.</p>
+    <a href="#" class="btn btn-outline-secondary btn-outline-secondary-custom" data-bs-toggle="modal"
+      data-bs-target="#loginModal">Netbanking Login</a>
+    <a href="#" class="btn btn-outline-secondary btn-outline-secondary-custom" data-bs-toggle="modal"
+      data-bs-target="#signUpModal">Register Now</a>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-2 g-4 mt-2">
+    <div class="col">
+      <div class="card">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="/Images/img_5.jpg" class="card-img-top img-fluid"
+              alt="Card Image 1">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title"><strong>Secure Online Banking</strong></h5>
+              <p class="card-text">Experience the convenience of managing your finances securely online with Unity
+                Financials. Our robust security measures ensure that your transactions are safe and protected.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="/Images/img_8.jpg" class="card-img-top img-fluid"
+              alt="Card Image 2">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title"><strong>Personalized Financial Solutions</strong></h5>
+              <p class="card-text">Discover personalized financial solutions tailored to your needs at Unity Financials.
+                Our expert advisors are here to help you achieve your financial goals.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="/Images/img_7.jpg" class="card-img-top img-fluid"
+              alt="Card Image 3">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title"><strong>Investment Opportunities</strong></h5>
+              <p class="card-text">Explore a range of investment opportunities with Unity Financials. From stocks and
+                bonds to mutual funds and more, we offer options to help you grow your wealth.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="/Images/img_6.jpg" class="card-img-top img-fluid"
+              alt="Card Image 4">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title"><strong>Flexible Loans</strong></h5>
+              <p class="card-text">Explore our flexible loan options tailored to meet your financial needs. Whether
+                you're looking for a personal loan, mortgage, or car loan, Unity Financials has you covered.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer id="footer" class="py-5">
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <h5 class="mb-4">Useful Links</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="/AboutUS/aboutUs.html"
+              class="nav-link p-0 text-body-secondary">About Us</a></li>
+          <li class="nav-item mb-2"><a href="/Services/services.html"
+              class="nav-link p-0 text-body-secondary">Services</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Terms of Service</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <h5 class="mb-4">Contact Information</h5>
+        <p>Phone: <a href="tel:+1234567890" class="nav-link p-0 text-body-secondary">+1 234 567 890</a></p>
+        <p>Email: <a href="mailto:info@unityfinancials.com"
+            class="nav-link p-0 text-body-secondary">info@unityfinancials.com</a></p>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <h5 class="mb-4">Branch Locations</h5>
+        <p>1. Unity Financials - Main Branch</p>
+        <p>Address: 123 Main Street, City, Country</p>
+        <p>Phone: <a href="tel:+1 234 567 890" class="nav-link p-0 text-body-secondary">+1 234 567 890</a></p>
+        <p>Email: <a href="mailto: mainbranch@unityfinancials.com"
+            class="nav-link p-0 text-body-secondary">mainbranch@unityfinancials.com</a></p>
+        <p>2. Unity Financials - Downtown Branch</p>
+        <p>Address: 456 Downtown Avenue, City, Country</p>
+        <p>Phone: <a href="tel:+1 234 567 890" class="nav-link p-0 text-body-secondary">+1 234 567 890</a></p>
+        <p>Email: <a href="mailto:downtownbranch@unityfinancials.com"
+            class="nav-link p-0 text-body-secondary">downtownbranch@unityfinancials.com</a></p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 mb-3">
+        <form>
+          <h5 class="mb-3">Subscribe to our Newsletter</h5>
+          <p>Stay updated with our latest news and offers.</p>
+          <div class="d-flex gap-2">
+            <input id="newsletter1" type="email" class="form-control" placeholder="Email address">
+            <button class="btn btn-info" type="button">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column flex-md-row justify-content-between py-4 my-4 border-top">
+      <p>© 2024 Unity Financials. All rights reserved.</p>
+      <ul class="list-unstyled d-flex">
+        <li class="ms-3"><a class="twitter" href="#"><img src="/Icons/twitter-x-fill.png"
+              alt="Twitter"></a></li>
+        <li class="ms-3"><a class="instagram" href="#"><img
+              src="/Icons/instagram-line.png" alt="Instagram"></a></li>
+        <li class="ms-3"><a class="facebook" href="#"><img
+              src="/Icons/facebook-circle-line.png" alt="Facebook"></a></li>
+      </ul>
+    </div>
+  </footer>
+
+
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="loginForm">
+            <div class="mb-3">
+              <label for="loginEmail" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp" required>
+            </div>
+            <div class="mb-3">
+              <label for="loginPassword" class="form-label">Password</label>
+              <input type="password" class="form-control" id="loginPassword" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Login</button>
+          </form>
+          <div class="text-center mt-3">
+            <p>Don't have an account? <a href="#" id="showSignUpModal">Sign Up</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sign Up Modal -->
+  <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signUpModalLabel">Sign Up</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="signUpForm">
+            <div class="mb-3">
+              <label for="signUpFirstName" class="form-label">First Name</label>
+              <input type="text" class="form-control" id="signUpFirstName" required>
+            </div>
+            <div class="mb-3">
+              <label for="signUpLastName" class="form-label">Last Name</label>
+              <input type="text" class="form-control" id="signUpLastName" required>
+            </div>
+            <div class="mb-3">
+              <label for="signUpEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="signUpEmail" aria-describedby="emailHelp" required>
+            </div>
+            <div class="mb-3">
+              <label for="signUpPhoneNumber" class="form-label">Phone Number</label>
+              <input type="text" class="form-control" id="signUpPhoneNumber" required>
+            </div>
+            <div class="mb-3">
+              <label for="signUpAddress" class="form-label">Address</label>
+              <input type="text" class="form-control" id="signUpAddress" required>
+            </div>
+            <div class="mb-3">
+              <label for="signUpPassword" class="form-label">Password</label>
+              <input type="password" class="form-control" id="signUpPassword" required>
+            </div>
+            <div class="mb-3">
+              <label for="signUpConfirmPassword" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="signUpConfirmPassword" required>
+            </div>
+            <button type="submit" class="btn btn-success w-100">Sign Up</button>
+          </form>
+          <div class="text-center mt-3">
+            <p>Already have an account? <a href="#" id="showLoginModal">Login</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="/Home/LoginSignUp.js"></script>
+
+</body>
+
+</html>
